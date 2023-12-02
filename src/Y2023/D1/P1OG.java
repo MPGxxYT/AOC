@@ -3,6 +3,11 @@ package Y2023.D1;
 import java.io.*;
 import java.util.*;
 
+// This was my original strategy but I tried the other one once I could not figure this out.
+// I now got this to work because I knew it would once I figured it out.
+// Ta daaa :D
+
+
 public class P1OG {
 
     // Take first and last digit in string
