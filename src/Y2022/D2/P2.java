@@ -29,9 +29,8 @@ public class P2 {
                 System.out.println(op + " " + me);
                 int score = 0;
                 switch (me) {
-                    case "X" -> { // LOSE
-                        me = lossMap.get(op);
-                    }
+                    case "X" -> // LOSE
+                            me = lossMap.get(op);
                     case "Y" -> {  // DRAW
                         me = drawMap.get(op);
                         score = score + 3;
@@ -42,15 +41,9 @@ public class P2 {
                     }
                 }
                 switch (me) {
-                    case "X" -> {
-                        score = score + 1;
-                    }
-                    case "Y" -> {
-                        score = score + 2;
-                    }
-                    case "Z" -> {
-                        score = score + 3;
-                    }
+                    case "X" -> score = score + 1;
+                    case "Y" -> score = score + 2;
+                    case "Z" -> score = score + 3;
                 }
                 line = reader.readLine();
                 total = total + score;
