@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Collections;
 import java.util.LinkedList;
 
-public class P1 {
+public class P2 {
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new FileReader("src/Y2022/D1/data.txt"))) {
             String line = reader.readLine();
@@ -21,7 +21,8 @@ public class P1 {
                 line = reader.readLine();
             }
             Collections.sort(list);
-            System.out.println("TOTAL " + list.get(list.size() - 1));
+            int total = list.get(list.size() - 1) + list.get(list.size() - 2) + list.get(list.size() - 3);
+            System.out.println("TOTAL " + total);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
