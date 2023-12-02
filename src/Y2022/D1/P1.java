@@ -1,2 +1,5 @@
-package Y2022.D1;public class P1 {
+package Y2022.D1;
+
+public class P1 {
+
 }
